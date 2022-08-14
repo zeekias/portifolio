@@ -1,0 +1,59 @@
+.tech-list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+}
+.tech-list .tech-content {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+.tech-list .arrow-btn{
+  font-size: 82px;
+  cursor: pointer;
+}
+.tech-list .tech-title-and-description{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.tech-list .my-skill{
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.tech-list .tech-image {
+  width: 350px;
+  height: 100%;
+  opacity: 0;
+  animation: float 6s ease-in-out infinite;
+}
+.tech-list .tech-selected {
+  opacity: 1;
+}
+@keyframes float {
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(48, 47, 47, 0.6); */
+    transform: translatey(0px);
+  }
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(48, 47, 47,0.2); */
+    transform: translatey(-20px);
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(48, 47, 47,0.6); */
+    transform: translatey(0px);
+  }
+}

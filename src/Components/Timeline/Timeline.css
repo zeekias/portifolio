@@ -1,0 +1,52 @@
+.timeline-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.timeline-container::before {
+    width: 5px;
+    height: 100%;
+    content: "";
+    left: 1%;
+    background-color: #EEEE;
+    position: absolute;
+}
+.timeline-container .timeline{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 50px;
+}
+.timeline-container .timeline .time-point{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timeline .time-point::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    border-radius: 100%;
+    position: absolute;
+    border: 3px solid #EEEE;
+    left: 0.1%;
+}
+.timeline .time-point .time-heading{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.time-point .time-heading .course{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+.time-point .time-info{
+    width: 50%;
+}

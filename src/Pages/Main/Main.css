@@ -1,0 +1,210 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #080713;
+  color: #eeee;
+}
+.s-home {
+  width: 100%;
+  height: 100vh;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-home .home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.s-home .home .container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+.s-home .home .container-text .text {
+  font-size: 45px;
+}
+.s-home .home .container-text .home-title {
+  font-size: 55px;
+}
+.s-home .home .container-text .typewriter {
+  max-width: 400px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #eeee;
+  letter-spacing: 0.15em;
+  animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #eeee;
+  }
+}
+.s-home .home .container-techs {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-about {
+  width: 100%;
+  height: 100vh;
+  padding: 120px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-about .about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.s-about .about .container-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.s-about .about .container-about-text {
+  text-align: justify;
+  line-height: 1.5em;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.s-about .about .container-about-text .download-cv {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #eeee;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+.download-cv a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  color: #e8bb30;
+  font-weight: 600;
+  text-decoration: none;
+}
+.download-cv a:hover{
+  color: #080713;
+}
+.download-cv:hover::before {
+  width: 200px;
+  height: 50px;
+  top: 0.5%;
+  content: "";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEEE;
+  animation: fadeDown 0.5s linear;
+}
+
+@keyframes fadeDown {
+  0% {
+    height: 0%;
+  }
+  50% {
+    height: 50%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.s-about .about .container-about-text .title-about {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.s-projects {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 80px;
+}
+
+.s-projects .projects {
+  width: 100%;
+  height: 100%;
+}
+.s-skills{
+  width: 100%;
+  height: 100vh;
+  padding: 120px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-skills .skills{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.s-skills .skills{
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.s-skills .skills .skills-title{
+  font-size: 50px;
+}
+.s-skills .skills .skill-image{
+  width: 100%;
+}
+.s-student-education{
+  width: 100%;
+  height: 100vh;
+}
+.s-student-education .student-education{
+  width: 100%;
+  height: 100%;
+  padding: 120px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.s-student-education .student-education .timeline-title{
+  font-size: 50px;
+}
